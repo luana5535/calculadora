@@ -35,6 +35,10 @@ function calculadora(primNum, operador, segNum) {
         break
     }
 }
-
+if(isNaN(primNum) || isNaN(segNum)) {
+    console.log('Digite apenas números')
+}
+else {
 let resultado = calculadora(primNum, operador, segNum)
 console.log(`O resultado da operação é ${resultado}`)
+}
